@@ -531,14 +531,27 @@ nav{
 	background-size: 100%;
 }
 #animacion3{
+	justify-content: center;
+    align-items: center;
+}
+#carousel-5{
+	width: 75%;
 	background-image: url("../../assets/img/fondo-anim3.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
 }
-#nps{
+#carousel-6,#carousel-7{
+	width: 75%;
+}
+#animacion4{
+	background-image: url("../../assets/img/fondo-morado.png");
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+}
+.etiqueta{
 	position: absolute;
-	left: -20px;
+	left: 6%;
 	z-index: 4;
 }
 #carousel-mac{
@@ -576,6 +589,7 @@ nav{
 	text-align: left;
 	line-height:1;
 }
+
 #cabecera3 p{
 	font-family: "Kanit", sans-serif;
 	font-weight: 500;
@@ -608,6 +622,22 @@ nav{
 	color: #7A48ED;
 	text-align: left;
 	line-height:1.2;
+}
+#cabecera-blanca-2 p{
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	line-height:1;
+}
+#cabecera-blanca-1 p{
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	font-size: 27px;
+	color: white;
+	text-align: left;
+	line-height:1;
 }
 
 
@@ -989,6 +1019,13 @@ nav{
 	height: 50%;
 }
 #carousel-mac{
+	width: 100%;
+}
+.etiqueta{
+	position: relative;
+	left: 0px;
+}
+#carousel-5,#carousel-6,#carousel-7{
 	width: 100%;
 }
 	
