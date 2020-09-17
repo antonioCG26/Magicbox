@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Garmur -->
+	<!-- http://youtu.be/JWrbcSPsCLA -->
+	<title>Caballo en movimiento</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<style>
+	#caballo{
+		background-image: url("outro.png");
+		background-position:0px 0px;
+		background-repeat:repeat;
+		width: 819.1px;
+		height: 379px;
+	}
+	</style>
+</head>
+<body>
+	<section id="caballo"> <!-- Contenedor de la imagen. --> </section>
+	<script>
+		var cantidadDeCuadros = 10 //Cantidad de fotogramas que sirven como índice.
+
+		var Caballo = function(){
+			//Atributos
+			this.elemento = document.getElementById("caballo") //Elemento de la línea 19.
+			this.anchura = 819.1 //Ancho del fotograma o sección a mostrar.
+			this.altura = 379 //Alto del fotograma (no necesario).
+			//Método
+			this.correr = function(){ //Paso para generar la animación. Si se repite, se forma un bucle.
+				this.elemento.style.backgroundPosition = cantidadDeCuadros-- * this.anchura + "px 0px" //Por ejemplo, "3580px 0px"
+				console.log(this.elemento.style.backgroundPosition )
+				if(this.cantidadDeCuadros == 0)
+					this.cantidadDeCuadros = 10 //Reinicio cuando el índice es 0.
+			}
+		}
+		
+		var $Caballo = new Caballo()
+		setInterval(function(){$Caballo.correr()},200) //Ejecución de $Caballo.correr() cada 150 milisegundos.
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #5B1DEC;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #5B1DEC;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 10% !important;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #5B1DEC;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: -.9rem !important;
+}
+
+.carousel-indicators .active{
+    background-color: #5B1DEC;
+}
+
+.cardInfo {
+	border: 0px !important;
+}
+
+.cardTextInfo {
+	color: black;
+}
+
+.ccpi {
+	background-image: url("") !important;
+}
+
+.ccp {
+	margin-left: -108px;
+}
+
+.ccn {
+	margin-right: -60px;
+}
+
+.pointer { 
+	cursor: pointer; 
+}
