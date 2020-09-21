@@ -1,3 +1,205 @@
+$(window).on("load",function(){
+	infografiaSlider();
+	navbarEmergente();
+});
+$(window).on("resize",function(){
+	infografiaSlider();
+	navbarEmergente();
+});
+function infografiaSlider(){
+	var SWidth = screen.width;
+	console.log(SWidth);
+	if(SWidth>=1024)
+	{
+		$("#container-infografia").html("");
+		$("#container-infografia").html('<div class="carousel slide" data-ride="carousel" id="carousel-3" style="text-align: -webkit-center">'+
+            '<div class="carousel-inner" role="listbox">'+
+                '<!-- Primeras tres infografías -->'+
+                '<div class="carousel-item active">'+
+                    '<div class="row">'+
+                        '<div class="col-md-4 col-4">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "BOX and WHISKERS plot!"}&#39; href="assets/img/infografia/P1.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER1.png" alt="Slide Image"></a>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-4 col-4">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "Happy Team"}&#39; href="assets/img/infografia/P2.jpg">'+
+                                    '<img class="card-img-top" src="assets/img/infografia/POSTER2.png" alt="Slide Image"></a>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-4 col-4">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "SCRUM POKER - Game Rules"}&#39; href="assets/img/infografia/P3.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER3.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'+
+                '<!-- Fin primers tres Infografías -->'+
+                '<!-- Primeras tres infografías -->'+
+                '<div class="carousel-item">'+
+                    '<div class="row">'+
+                        '<div class="col-md-4 col-4 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "COOLERS estrategias para su instalación"}&#39&#39; href="assets/img/infografia/P4.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER4.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-4 col-4 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "Activaciones"}&#39&#39; href="assets/img/infografia/P5.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER5.png" alt="Slide Image"></a>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-4 col-4 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "ONEWAY ANOVA"}&#39&#39; href="assets/img/infografia/P6.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER6.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'+
+                '<!-- Fin primers tres Infografías -->'+
+                '<!-- Primeras tres infografías -->'+
+                '<div class="carousel-item">'+
+                    '<div class="row">'+
+                        '<div class="col-md-4 col-4 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<img class="card-img-top" src="assets/img/infografia/POSTER7.png" alt="Slide Image">'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-4 col-4 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<img class="card-img-top" src="assets/img/infografia/POSTER8.png" alt="Slide Image">'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-4 col-4 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "SCRUM Framework Rules"}&#39; href="assets/img/infografia/P9.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER9.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'+
+                '<!-- Fin primers tres Infografías -->'+
+            '</div>'+
+            '<div>'+
+                '<a class="carousel-control-prev " href="#carousel-3" role="button" data-slide="prev">'+
+                    '<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">'+
+               '</a>'+
+               '<a class="carousel-control-next " href="#carousel-3" role="button" data-slide="next">'+
+                    '<img class="carousel-control-next-icon" src="assets/img/derecha.png">'+
+                '</a></div>'+
+            '<ol class="carousel-indicators">'+
+                '<li data-target="#carousel-1" data-slide-to="0" class="active"></li>'+
+                '<li data-target="#carousel-1" data-slide-to="1"></li>'+
+                '<li data-target="#carousel-1" data-slide-to="2"></li>'+
+            '</ol>'+
+        '</div>');
+	}else{
+		$("#container-infografia").html("");
+		$("#container-infografia").html('<div class="carousel slide" data-ride="carousel" id="carousel-3" style="text-align: -webkit-center">'+
+            '<div class="carousel-inner" role="listbox">'+
+                '<div class="carousel-item active">'+ 
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "BOX and WHISKERS plot!"}&#39; href="assets/img/infografia/P1.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER1.png" alt="Slide Image"></a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "Happy Team"}&#39; href="assets/img/infografia/P2.jpg">'+
+                                    '<img class="card-img-top" src="assets/img/infografia/POSTER2.png" alt="Slide Image"></a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "SCRUM POKER - Game Rules"}&#39; href="assets/img/infografia/P3.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER3.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "COOLERS estrategias para su instalación"}&#39&#39; href="assets/img/infografia/P4.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER4.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "Activaciones"}&#39&#39; href="assets/img/infografia/P5.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER5.png" alt="Slide Image"></a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "ONEWAY ANOVA"}&#39&#39; href="assets/img/infografia/P6.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER6.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12 ">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<img class="card-img-top" src="assets/img/infografia/POSTER7.png" alt="Slide Image">'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<img class="card-img-top" src="assets/img/infografia/POSTER8.png" alt="Slide Image">'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+                '<div class="carousel-item">'+
+                        '<div class="col-12">'+
+                            '<div class="card cardInfo mb-2" style="border:none">'+
+                                '<a data-fancybox="images" data-options=&#39;{"caption" : "SCRUM Framework Rules"}&#39; href="assets/img/infografia/P9.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER9.png" alt="Slide Image">'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>'+
+                '</div>'+
+            '</div>'+
+            '<div>'+
+                '<a class="carousel-control-prev " href="#carousel-3" role="button" data-slide="prev">'+
+                    '<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">'+
+               '</a>'+
+               '<a class="carousel-control-next " href="#carousel-3" role="button" data-slide="next">'+
+                    '<img class="carousel-control-next-icon" src="assets/img/derecha.png">'+
+                '</a></div>'+
+            '<ol class="carousel-indicators">'+
+                '<li data-target="#carousel-1" data-slide-to="0" class="active"></li>'+
+                '<li data-target="#carousel-1" data-slide-to="1"></li>'+
+                '<li data-target="#carousel-1" data-slide-to="2"></li>'+
+            '</ol>'+
+        '</div>');
+
+	}
+}
+
+function navbarEmergente()
+{
+	var SWidth = screen.width;
+	console.log(SWidth);
+	if(SWidth>=1024)
+	{
+		$("#categoria").removeAttr("style");
+		$('#navbar-emergente').removeClass('open');
+	}else{
+		$("#categoria").css({"display": "none","height": "90%","cursor": "pointer"});
+
+	}
+}
+
 $('.btn-menu').click(function() { 
 		$(this).toggleClass('active');
 		$('#menu, nav').toggleClass('open');
@@ -62,6 +264,29 @@ $('.btn-menu').click(function() {
 					$(".btn-menu").attr("src","assets/img/burger.png");
 				}
 		}
+
+		$(".categoria").on("click", function(){
+			if($("#navbar-emergente").hasClass("open")==true)
+			{
+				$("#Burger-emergente-btn").toggleClass('active');
+		$('#navbar-emergente').toggleClass('open');
+		if($("#Burger-emergente-btn").hasClass("active")==true)
+		{
+			$("#Burger-emergente-btn").attr("src","assets/img/Grupo 41@2x.png");
+			$("#categoria").css("display","block");
+			$("#categoria").addClass("d-flex");
+		}else{
+			$("#Burger-emergente-btn").attr("src","assets/img/burger.png");
+			$("#categoria").css("display","none");
+			$("#categoria").removeClass("d-flex");
+		}
+	}else{
+		
+	}
+		
+
+		});
+
 
 		function modalCapsula()
 		{
@@ -447,9 +672,9 @@ $('.btn-menu').click(function() {
 								.fromTo("#grupoMas",{opacity:1},{opacity:0,duration:4},"-=7")
 								.fromTo("#MagicBoxText",{opacity:0},{opacity:1,duration:3,delay:2},"-=7")
 								.fromTo("#transparent-x",{top:"85%"},{left:"50%",opacity:0,duration:6},"-=7")
-								.fromTo("#green-x,#blue-x,#MagicBoxBig,#MagicBoxText,#transparent-x,#down",{},{y:"-500",duration:19,delay:20})
+								.fromTo("#green-x,#blue-x,#MagicBoxBig,#MagicBoxText,#transparent-x,#down,#logoMB",{},{y:"-500",duration:19,delay:20})
 								.fromTo("#screen2",{opacity:0},{opacity:1,duration:5},"-=10")
-								.fromTo("#green-x,#blue-x,#MagicBoxBig,#MagicBoxText,#transparent-x,#down",{display:"blocks"},{display:"none"})
+								.fromTo("#green-x,#blue-x,#MagicBoxBig,#MagicBoxText,#transparent-x,#down,#logoMB",{display:"blocks"},{display:"none"})
 								.fromTo(".somosMB", 10, {rotation: 0}, {rotation: 135, ease:"back.out(2.7)",duration:10,delay:0},"-=6")
 								.fromTo(".boton-play",{scale:1},{scale:40,duration:35},"-=9")
 								.fromTo("#video1",{opacity:0},{opacity:1,duration:5},"-=31")

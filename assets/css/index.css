@@ -399,6 +399,7 @@ nav{
 	width: 100%;
 	height: 100%;
 	position: fixed;
+	top:0px;
 	background-color: white;
 	z-index: 100;
 	box-shadow: 11px 12px 27px -10px rgba(0,0,0,0.53);
@@ -417,6 +418,7 @@ nav{
 	font-weight: 500;
 	z-index: 10;
 	transition: width .5s, height .4s;
+	min-height: 53px;
 
 }
 #navbar-emergente.open {
@@ -450,7 +452,7 @@ nav{
 	top:0px;
 	background-color: #01FFA2;
 	width: 60px;
-	height: 42px;
+	height: 54px;
 }
 #close-emergente{
 	position: absolute;
@@ -458,10 +460,15 @@ nav{
 	top:0px;
 	background-color: #01FFA2;
 	width: 60px;
-	height: 42px;
+	height: 54px;
 }
-#Burger-emergente-btn,#Burger-emergente-close{
-	width: 30px;
+#Burger-emergente-btn{
+	width: 35px;
+	margin-top: 13px;
+}
+#Burger-emergente-close{
+	width: 44px;
+	margin-top: 5px;
 }
 
 #emergenteClose{
@@ -1002,11 +1009,6 @@ nav{
 	width: 100%;
 	height: 100%;
 }
-#categoria{
-	display: none;
-    height: 90%;
-    cursor: pointer;
-}
 #MagicBoxBig{
 	position: absolute;
 	min-width: 400px;
@@ -1032,6 +1034,12 @@ nav{
 
 	}
 	@media all and (max-width: 800px) and (orientation: landscape) { 
+	#submenu{
+		display: none;
+	}
+	#section1,#section2,#section3{
+		font-size: 25px;
+	}
 	#btn-menu img {
 	    width: 20px;
 	    margin-top: 23px;
