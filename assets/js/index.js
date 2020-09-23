@@ -617,6 +617,7 @@ $('.btn-menu').click(function() {
   		console.log(orientation); 
   		orientationJS(window.screen.orientation.angle)	
 };
+});
 
 	function orientationJS(orientation)
 	{
@@ -624,6 +625,7 @@ $('.btn-menu').click(function() {
 		switch (orientation)
 				{
 					case 0:
+					$("#alertPortrait").addClass("hide");
 					var videoAnimacion = new TimelineMax()
 								.fromTo(".navbar",{display:"blocks"},{display:"none",duration:3})
 							    .fromTo("#green-x",{top:"10vh"},{top:"80vh",duration:9})
@@ -664,6 +666,7 @@ $('.btn-menu').click(function() {
 
 					break;
 					case 90:
+					$("#alertPortrait").removeClass("hide");
 					var videoAnimacion = new TimelineMax()
 								.fromTo(".navbar",{display:"blocks"},{display:"none",duration:3})
 							    .fromTo("#green-x",{top:"10vh"},{top:"80vh",duration:9})
@@ -922,7 +925,7 @@ $('.btn-menu').click(function() {
 				$("#MagicBoxBig").css("backgroundPosition","-"+framewidht+"px 0px");
 			}
 				
-			}
+			};
 
 			$(".list-people").on("click",function(){
 				$(".list-people").each(function(index,element){
@@ -964,16 +967,64 @@ $('.btn-menu').click(function() {
 					$(this).css({"transform":"rotateY(0deg)","transition":".6s"});
 				}else{
 				}
-			})
+			});
 
 			$(".btn-ourPeople").on("mouseover",function(){
 				$(this).css("width","60px");
 			});
 			$(".btn-ourPeople").on("mouseout",function(){
 				$(this).css("width","50px");
-			})
+			});
 
+			$(".imacTransparente").on("click",function(){
+				console.log(this.id);
+				switch (this.id)
+				{
+					case "NPS":
+					var elem = document.getElementById("videoNPS");
+					break;
+					case "bias1":
+					var elem = document.getElementById("videobias1");
+					break;
+					case "bias2":
+					var elem = document.getElementById("videobias2");
+					break;
+					case "bias3":
+					var elem = document.getElementById("videobias3");
+					break;
+					case "cyber1":
+					var elem = document.getElementById("videocyber1");
+					break;
+					case "cyber2":
+					var elem = document.getElementById("videocyber2");
+					break;
+				}
+				console.log(elem);
+				fullscreenNPS(elem);
+				
+			});
+			var VideoNPSFull=false;
+			function fullscreenNPS(elem){
+				 if (elem.requestFullscreen) {
+				  elem.requestFullscreen();				  
+				  } else if (elem.mozRequestFullScreen) { /* Firefox */
+				  elem.mozRequestFullScreen(); 				  
+				  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+				  elem.webkitRequestFullscreen(); 				  
+				  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+				  elem.msRequestFullscreen(); 				  
+				  }
+			}
+			$(".videoLearning").on("fullscreenchange", function(){
+				if(VideoNPSFull)
+				{
+					$(this).css({"paddingLeft": "11%","paddingRight": "11%","paddingTop": "4%"});
+					VideoNPSFull=false;
+				}else{
+					$(this).css({"paddingLeft": "0px","paddingRight": "0px","paddingTop": "0px"});
+					VideoNPSFull=true;
+					}
+				console.log(this.requestFullscreen);
+			});
 
-
-});
 
