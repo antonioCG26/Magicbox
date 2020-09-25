@@ -273,7 +273,7 @@ nav{
 
 
 #titlechart{
-	background-image: url("../../assets/img/fondo@2x.png") ;
+	background-image: url("../../assets/img/fondo@2xtransparente.png") ;
 	background-size: cover;
 }
 
@@ -294,7 +294,7 @@ nav{
 	top:50%;
 	font-family: 'kanit', sans-serif;
 	font-weight: 300;
-	color: #B5B4B5;
+	color: #3e3d3e;
 	font-size: 18px;
 	opacity: 0;
 }
@@ -400,6 +400,9 @@ nav{
 }
 .carousel-items{
 	display: inline-flex;
+}
+#div-portafolio{
+	width: 20%;
 }
 .portafolio{
 	width: 100%;
@@ -687,7 +690,8 @@ nav{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	opacity: 0;
+	opacity: 1;
+	display: none;
 }
 #como-title{
 	width: 200%;
@@ -808,6 +812,9 @@ nav{
 	left: 0px;
 	font-weight: 300;
 }
+#MemberDesc{
+	font-size: 1vw;
+}
 .back{
 	background-color: rgba(91, 29, 236,1);
 	background-image: url("../../assets/img/enmascarar.png");
@@ -831,7 +838,7 @@ nav{
 	width: 100%;
 	height: auto;
 	min-height: 30px;
-	font-size: 22px;
+	font-size: 20px;
 	padding-top: 1px;
 	line-height: 1;
     font-weight: 400;
@@ -1005,6 +1012,10 @@ nav{
 		bottom: 7.5vw;
 		z-index: -3;
 	}
+	#div-portafolio{
+	width: 20%;
+	min-width: 400px;
+}
 
 	#ourwork-title{
 	font-size: 22vw;
@@ -1050,6 +1061,11 @@ nav{
 	display: block;
 	width: 100%
 }
+.integrantes3{
+	display: block;
+	width: 100%
+}
+
 .emergente-information{
 	padding-top: 40px;
 	width: 100%;
@@ -1075,6 +1091,13 @@ nav{
 }
 #carousel-5,#carousel-6,#carousel-7{
 	width: 100%;
+}
+#TeamName{
+	font-size: 25px;
+	min-height: 46px;
+}
+#MemberDesc{
+	font-size: 4vw;
 }
 	
 

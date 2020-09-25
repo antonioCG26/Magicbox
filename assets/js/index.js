@@ -1,10 +1,13 @@
 $(window).on("load",function(){
 	infografiaSlider();
 	navbarEmergente();
+	
 });
 $(window).on("resize",function(){
 	infografiaSlider();
 	navbarEmergente();
+	imgTeam();
+
 });
 function infografiaSlider(){
 	var SWidth = screen.width;
@@ -603,24 +606,28 @@ $('.btn-menu').click(function() {
 
 	$(function () { // wait for document ready
 	window.onload = function(event){
+
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    					orientationJS(event.currentTarget.screen.orientation.angle)
 
 		}else{
-			orientationJS(0)
+			orientationJS(0);
 		}
 		console.log(event);
 	}
 
+	
+});
 	window.onorientationchange = function(event) { 
+		console.log(event);
   		var orientation = window.screen.orientation;
   		console.log(orientation); 
   		orientationJS(window.screen.orientation.angle)	
 };
-});
 
 	function orientationJS(orientation)
 	{
+
 		var controller = new ScrollMagic.Controller();
 		switch (orientation)
 				{
@@ -641,19 +648,19 @@ $('.btn-menu').click(function() {
 								.fromTo(".somosMB", 10, {rotation: 0}, {rotation: 135, ease:"back.out(2.7)",duration:10,delay:0},"-=6")
 								.fromTo(".boton-play",{scale:1},{scale:40,duration:35},"-=9")
 								.fromTo("#video1",{opacity:0},{opacity:1,duration:5},"-=31")
-								.fromTo(".borde,.somosMB",{display:"blocks"},{display:"none"},"-=4")
+								.fromTo(".borde,.somosMB",{display:"blocks"},{display:"none"},"-=10")
 								.fromTo(".boton-play",{display:"blocks"},{display:"none",duration:1})
-								.fromTo("#titlechart",{backgroundImage:"url(assets/img/fondo@2x.png)"},{backgroundImage:"url(assets/img/fondoblenco.jpg)"},"-=5")
+								.fromTo("#titlechart",{backgroundImage:"url(assets/img/fondo@2xtransparente.png)"},{backgroundImage:"url(assets/img/fondoblenco.jpg)"},"-=5")
 								.fromTo("#ourwork-title",.5,{display:"none"},{display:"block"})
 								.fromTo("#bullet1",1,{backgroundColor:"rgb(1,255,162)"},{backgroundColor:"transparent"})
 								.fromTo("#bullet2",1,{backgroundColor:"transparent"},{backgroundColor:"rgb(1,255,162)"})
 								.fromTo("#ourwork-title",10, {x:  "100%"}, {x: "5%", ease:"back.out(1.7)"})
 								.fromTo("#video1",{},{y:"-1300",duration:15},"-=16")
 								.fromTo("#carousel",40, {left:  "-4000px"}, {left: "20px", ease: Linear.easeNone},"-=30")
-								.fromTo(".how",1,{opacity:0},{opacity:1},"-=8")
-								.fromTo(".how",7,{top:"100%"},{top:"65%"},"-=8")
+								.fromTo(".how",1,{display:"none"},{display:"block"},"+=0")
+								
 								.fromTo("#carousel",16,{},{y:"-2000px"})
-								.fromTo(".how",6,{top:"65%"},{top:"0%"},"-=16")
+								.fromTo(".how",6,{top:"100%"},{top:"0%"},"-=16")
 								.fromTo("#como-title",5,{x: "-100"},{x:"-500"},"-=16")
 								.fromTo("#carousel",1,{display:"blocks"},{display:"none"})
 								.fromTo("#como-title",4,{paddingTop:"30%"},{paddingTop:"1%"},"-=16")
@@ -812,9 +819,8 @@ $('.btn-menu').click(function() {
 	});
 
 	$( document ).ready(function() {
+	
 		screen.orientation.unlock();
-
-
     		slidePeople();
     		imgTeam();
 
@@ -860,12 +866,12 @@ $('.btn-menu').click(function() {
 	var TotalPerson = 0;
 	function slidePeople(){
 		TotalPerson=0;
-		if(numberPerson<=7)
+		if(numberPerson<=5)
 		{
 			$(".integrantes1").css("display","block");
 			$(".integrantes2").css("display","none");
 			$(".integrantes3").css("display","none");
-		}else if(numberPerson<=14){
+		}else if(numberPerson<=11){
 			$(".integrantes1").css("display","none");
 			$(".integrantes2").css("display","block");
 			$(".integrantes3").css("display","none");
@@ -901,13 +907,18 @@ $('.btn-menu').click(function() {
 				srt=srt.replace("integrantes","CUADRADAS");
 				element.firstChild.nextSibling.src = srt;
 				console.log(srt);
-			}
+			}else{
+				srt=element.firstChild.nextSibling.src;
+				srt=srt.replace("CUADRADAS","integrantes");
+				element.firstChild.nextSibling.src = srt;
+				console.log(srt);
+				}
 		});
 	}
 
 		function animacionMB(framenum){
 			var width = screen.width;
-			if(width<1200)
+			if(width<1100)
 			{	
 				$("#MagicBoxBig").css("backgroundImage","url(assets/img/outro50.png)");
 				
