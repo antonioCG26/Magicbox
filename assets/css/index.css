@@ -200,7 +200,6 @@ nav{
   position:fixed;
   top:0px;
   right:0px;
-  background: red;
   border-radius:0px 0px 0px 6200px;
   transition: width .5s, height .4s, border-radius .6s;
   z-index: 100;
@@ -579,7 +578,7 @@ nav{
 	background-size: 100%;
 }
 #carousel-6,#carousel-7{
-	width: 50%;
+	width: 45%;
 }
 #animacion4{
 	background-image: url("../../assets/img/fondo-morado.png");
@@ -752,7 +751,7 @@ nav{
 }
 #ourPeople{
 	background-color: white;
-	background-image: url("../../assets/img/fondo@2x.png") ;
+	background-image: url("../../assets/img/fondo@2xtransparente.png") ;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -782,11 +781,29 @@ nav{
 	cursor: pointer;
 
 }
+#btn-izquierda{
+	position: absolute;
+	width:30px;
+	top:50%;
+	left:10%;
+	z-index: 100;
+}
+#btn-derecha{
+	position: absolute;
+	width:30px;
+	top:50%;
+	right:10%; 
+	z-index: 100;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	width: 30px !important;
+	height: auto !important;
+}
 .integrantes1{
 	display: block;
 	width: 100%
 }
-.integrantes2{
+.integrantes2,.integrantes3,.integrantes4,.integrantes5,.integrantes6{
 	display: none;
 	width: 100%
 }
@@ -1053,16 +1070,20 @@ nav{
      max-width: 100%; 
     font-family: 'Kanit', sans-serif;
 }
+#btn-izquierda{
+	left:20px;
+	
+}
+#btn-derecha{
+	right:20px; 
+	
+}
 .integrantes1{
 	display: block;
 	width: 100%
 }
-.integrantes2{
-	display: block;
-	width: 100%
-}
-.integrantes3{
-	display: block;
+.integrantes2,.integrantes3,.integrantes4,.integrantes5,.integrantes6{
+	display: none;
 	width: 100%
 }
 

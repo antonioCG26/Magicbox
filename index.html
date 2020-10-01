@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-    <div id="bullets">
+    <div class="d-none d-sm-block" id="bullets">
     	<ul style="list-style: none">
     		<li><div class=" m-3 item" id="bullet1"></div></li>
     		<li><div class=" m-3 item" id="bullet2" style="background-color: transparent!important;"></div></li>
@@ -192,16 +192,17 @@
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/screen2.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/screen3.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/screen4.png" alt="Slide Image"></div>
-	            <div>
+	            
+            </div>
+            <div>
 	            	<a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-	            		<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
+	            		<img class="carousel-control-prev-icon btn-slide-izq" src="assets/img/izquierda.png">
 	            	</a>
 	            	<a class="carousel-control-next" href="#carousel-1" role="button"
 	                    data-slide="next">
-	                    <img class="carousel-control-next-icon" src="assets/img/derecha.png">
+	                    <img class="carousel-control-next-icon btn-slide-der" src="assets/img/derecha.png">
 	                </a>
 	            </div>
-            </div>
            
             
         </div>
@@ -233,7 +234,8 @@
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/movil2.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/movil3.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/movil4.png" alt="Slide Image"></div>
-                <div>
+            </div>
+            <div>
 	            	<a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
 	            		<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
 	            	</a>
@@ -242,7 +244,6 @@
 	                    <img class="carousel-control-next-icon" src="assets/img/derecha.png">
 	                </a>
             	</div>
-            </div>
             
             
         </div>
@@ -279,7 +280,7 @@
 		</div>
 	</div>
         <div class=" carousel slide carousel-fade  mx-auto  " data-ride="carousel" id="carousel-6" >
-        	<img class="etiqueta" src="assets/img/nps.png">
+        	<img class="etiqueta" src="assets/img/bias.png">
             <div class="carousel-inner mx-auto"  role="listbox" >
             	<div class="carousel-item active">
             		<div style="height: 500px;width:100%">
@@ -314,16 +315,17 @@
             			
             		</div>
             		</div>
-	            <div>
-	            	<a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev">
+	            
+            </div>
+            <div>
+	            	<a class="carousel-control-prev pr-lg-5 pr-4" href="#carousel-6" role="button" data-slide="prev">
 	            		<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
 	            	</a>
-	            	<a class="carousel-control-next" href="#carousel-6" role="button"
+	            	<a class="carousel-control-next pl-lg-5 pl-4" href="#carousel-6" role="button"
 	                    data-slide="next">
 	                    <img class="carousel-control-next-icon" src="assets/img/derecha.png">
 	                </a>
 	            </div>
-            </div>
            
             
         </div>
@@ -331,8 +333,8 @@
      <div class=" h-100 w-100 mt-4 " id="animacion5"  >
 		
          <div class=" carousel slide carousel-fade  mx-auto  " data-ride="carousel" id="carousel-7" >
-        	<img class="etiqueta" src="assets/img/nps.png">
-            <div class="carousel-inner mx-auto"  role="listbox" >
+        	<img class="etiqueta" src="assets/img/prevencion.png">
+            <div class="carousel-inner mx-auto"  role="listbox" style="max-width: 670px" >
             	<div class="carousel-item active">
             		<div style="height: 500px;width:100%">
             			<img class=" d-block imacTransparente" id="cyber1" src="assets/img/iMac.png" alt="Slide Image">
@@ -355,16 +357,16 @@
             			
             		</div>
             		</div>
-	            <div>
-	            	<a class="carousel-control-prev" href="#carousel-7" role="button" data-slide="prev">
+            </div>
+             <div>
+	            	<a class="carousel-control-prev pr-lg-5 pr-4" href="#carousel-7" role="button" data-slide="prev">
 	            		<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
 	            	</a>
-	            	<a class="carousel-control-next" href="#carousel-7" role="button"
+	            	<a class="carousel-control-next pl-lg-5 pl-4" href="#carousel-7" role="button"
 	                    data-slide="next">
 	                    <img class="carousel-control-next-icon" src="assets/img/derecha.png">
 	                </a>
 	            </div>
-            </div>
            
             
         </div>
@@ -382,9 +384,18 @@
 
 <div class=" mt-3  emergente-information" id="Infografias" style="overflow: auto;">
     <!--<p class="mx-5" id="titulo-emergente">Infografías</p>-->
-    
+    <div>
+                <a class="carousel-control-prev " href="#carousel-3" role="button" data-slide="prev">
+                    <img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
+                </a>
+                <a class="carousel-control-next " href="#carousel-3" role="button" data-slide="next">
+                    <img class="carousel-control-next-icon" src="assets/img/derecha.png">
+                </a>
+        </div>
     <div class="container" id="container-infografia" style="text-align: center;">
+
         <div class="carousel slide" data-ride="carousel" id="carousel-3" style="text-align: -webkit-center">
+
             <div class="carousel-inner" role="listbox">
                 <!-- Primeras tres infografías -->
                 <div class="carousel-item active">
@@ -455,13 +466,7 @@
                 </div>
                 <!-- Fin primers tres Infografías -->
             </div>
-            <div>
-                <a class="carousel-control-prev " href="#carousel-3" role="button" data-slide="prev">
-                    <img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
-                </a>
-                <a class="carousel-control-next " href="#carousel-3" role="button" data-slide="next">
-                    <img class="carousel-control-next-icon" src="assets/img/derecha.png">
-                </a></div>
+           
             <ol class="carousel-indicators">
                 <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-1" data-slide-to="1"></li>
@@ -480,12 +485,12 @@
 </div>
 <!-- Sección Mas -->
 <div class=" mt-3  emergente-information" id="Mas" style="overflow: auto;">
-    <div class="row m-5" style="margin-bottom: 1rem!important">
-        <div class="col-12" id="cabecera1">
-            <p class="">Lorem ipsum dolor sit amet.</p>
+    <div class="row m-5 d-flex justify-content-center" style="margin-bottom: 1rem!important">
+        <div class="col-12 " id="cabecera1">
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="col-12 col-lg-6" id="cabecera2">
-            <p class="">Lorem ipsum dolor sit amet, augue nostrud offendit ius ex, qui denique apeirian definiebas eu.</p>
+        <div class="col-12 col-lg-6 " id="cabecera2">
+            <p class="text-center">Lorem ipsum dolor sit amet, augue nostrud offendit ius ex, qui denique apeirian definiebas eu.</p>
         </div>
     </div>
     <div class="container" style="text-align: center;">
@@ -510,12 +515,12 @@
             </div>
         </div>
     </div><br>
-    <div class="row m-5 d-flex align-items-center" style="margin-bottom: 0rem!important">
+    <div class="row m-5 d-flex align-items-center justify-content-center" style="margin-bottom: 0rem!important">
         <div class="col-12 " id="cabecera1">
-            <p >Hablamos español, inglés y lenguajes de programación</p>
+            <p class="text-center" >Hablamos español, inglés y lenguajes de programación</p>
         </div>
         <div class="col-12 col-lg-6" id="cabecera2">
-            <p >Mediante HTML, CSS y Javascript generamos diferentes elementos, desde la integración de e-learnings hasta el desarrollo de páginas web.</p>
+            <p class="text-center" >Mediante HTML, CSS y Javascript generamos diferentes elementos, desde la integración de e-learnings hasta el desarrollo de páginas web.</p>
         </div>
     </div>
     <div class="container h-100 d-flex align-items-center" style="text-align: center;">
@@ -531,14 +536,15 @@
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/infografia/8.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/infografia/9.png" alt="Slide Image"></div>
                 <div class="carousel-item"><img class="w-100 d-block" src="assets/img/infografia/10.png" alt="Slide Image"></div>
-                <div>
-                <a class="carousel-control-prev " href="#carousel-4" role="button" data-slide="prev">
+               
+            </div>
+             <div>
+                <a class="carousel-control-prev pr-lg-5 pr-4 " href="#carousel-4" role="button" data-slide="prev">
                     <img class="carousel-control-prev-icon" src="assets/img/izquierda.png">
                 </a>
-                <a class="carousel-control-next " href="#carousel-4" role="button" data-slide="next">
+                <a class="carousel-control-next pl-lg-5 pl-4 " href="#carousel-4" role="button" data-slide="next">
                     <img class="carousel-control-next-icon" src="assets/img/derecha.png">
                 </a></div>
-            </div>
              
             
         </div>
@@ -619,21 +625,10 @@
 							<div class="col-lg-5 col-12">
 								<h1 id="ourPeople-title">Our People</h1>
 							</div>
-							<div class="col-lg-1 col-4 d-none d-sm-block">
-								<img class="btn-ourPeople lentes" onclick="btnListPeople(1)" src="assets/img/lentes-hover.png">
-							</div>
-							<div class="col-lg-1 col-4 d-none d-sm-block">
-								<img class="btn-ourPeople bigote" onclick="btnListPeople(2)" src="assets/img/bigote.png">
-
-							</div>
-							<div class="col-lg-1 col-4 d-none d-sm-block">
-								<img class="btn-ourPeople wink" onclick="btnListPeople(3)" src="assets/img/wink.png">
-							</div>
-							
 						</div>
 						<div class="row people-list d-flex align-items-center mx-auto">
-						<img class="d-lg-none d-xl-none " id="btn-izquierda" src="assets/img/izquierda.png"  style="position: absolute;width:50px;top:50%;left:10px;z-index: 100 ">
-						<img class="d-lg-none d-xl-none " id="btn-derecha" src="assets/img/derecha.png" style="position: absolute;width:50px;top:50%;right:10px; ;z-index: 100">
+						<img class=" " id="btn-izquierda" src="assets/img/izquierda.png"  >
+						<img class=" " id="btn-derecha" src="assets/img/derecha.png">
 
 						 
 						  <div class="integrantes1 " >
@@ -645,11 +640,12 @@
 										<div class="back m-3 p-4">
 										 <p class="pl-3 pt-2 pt-lg-1 transformation " id="TeamName">People Transformation </p>
 											<div class="mt-lg-3 mt-5" id="MemberDesc">
-											<ul style="list-style: none;">
-												<li>Info 0</li>
-												<li>Info 1</li>
-												<li>Info 2</li>
-												<li>Info 3</li>
+												<p><b>RAMDOM-ale</b></p>
+											<ul>
+												<li>Perseverante</li>
+												<li>Organizada</li>
+												<li>Perfeccionista</li>
+												<li>Lider</li>
 											</ul>
 											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 											tempor </p>
@@ -670,8 +666,7 @@
 												<li>Enfoque perceptivo</li>
 												<li>Una sonrisa que innova</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p> Me encantan las soluciones con diseño estratégico y generar experiencias memorables mediante él. Amo trabajar con vectores y soy súper rápida. </p>
 										</div>
 											
 										</div>
@@ -690,12 +685,15 @@
 												<li>Entusiasta e inquieta</li>
 												<li>Casi tan ingenioso como la película de Adam Sandler</li>
 											</ul>
-											<p> Me encanta dar todo de mi en mi trabajo, no me gusta quedarme en mi zona de confort.<br>	 
-¡Disfruto mucho de conocer nuevas personas y trabajar con ellas en conjunto! Soy muy ocurrente y me gusta hacer reír a los demás. </p>
+											<p> Me encanta dar todo de mi en mi trabajo y al mismo tiempo conocer personas nuevas y sacarle una sonrisa con mis ocurrencias. </p>
 										</div>
 											
 										</div>
 								</div>
+							</div>
+						 </div>
+						 <div class="integrantes2 " >
+							<div class="row people-row mx-auto ">
 								<div class="col-lg-4 col-12  list-people d-none d-sm-block">
 									<img class="my-3" src="assets/img/integrantes/Antonio.jpg" style="width: 100%">
 									<p class="MemberName mx-3">Antonio Cruz</p>
@@ -703,14 +701,14 @@
 										<div class="back m-3 p-4 ">
 											<p class="pl-3 pt-2 pt-lg-1 Growth " id="TeamName">Growth Team</p>
 											<div class="mt-lg-3 mt-5" id="MemberDesc">
-												<p><b>INNOVATIVE DEV</b></p>
+												<p><b>THE WITTY ONE</b></p>
 											<ul >
 												<li>100% entusiasta</li>
 												<li>Fuerza disruptiva</li>
 												<li>Emprendedor impulsado</li>
 												<li>Una mente que nunca se detiene</li>
 											</ul>
-											<p> Me considero una persona con un alto nivel de pensamiento creativo e ingenioso ,Ingeniero en TI con gusto por el baile y el ballet </p>
+											<p> Me considero una persona con un alto nivel de pensamiento creativo e ingenioso, Ingeniero en TIC's con gusto por el baile y el ballet. </p>
 											</div>
 											
 										</div>
@@ -757,7 +755,7 @@
 								
 							</div>
 						  </div>
-						 <div class="integrantes2 ">
+						 <div class="integrantes3 ">
 							<div class="row  people-row mx-auto">
 										<div class="col-lg-4 col-12  list-people d-none d-sm-block">
 									<img class="my-3" src="assets/img/integrantes/Esteban.jpg" style="width: 100%">
@@ -771,7 +769,7 @@
 												<li>Sociable y atento</li>
 												<li>Alto nivel de adaptabilidad y aprendizaje</li>
 												<li>Siempre con la mejor actitud</li>
-												<li>Info 3</li>
+												<li>Curioso e indagador.</li>
 											</ul>
 											<p> Master en diseño instruccional, experto en tecnología educativa, amante del café y de los buenos libros. </p>
 											</div>
@@ -792,8 +790,7 @@
 												<li>Proactivo</li>
 												<li>Creativo</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p>Amante de la buena musica y apasionado en el trabajo</p>
 											</div>
 											
 										</div>
@@ -805,18 +802,23 @@
 										<div class="back m-3 p-4 ">
 											<p class="pl-3 pt-2 pt-lg-1 MAZ " id="TeamName">MAZ Team</p>
 											<div class="mt-lg-3 mt-5" id="MemberDesc">
-											<ul style="list-style: none;">
-												<li>Info 0</li>
-												<li>Info 1</li>
-												<li>Info 2</li>
-												<li>Info 3</li>
+												<p><b>HEN MOMMY</b></p>
+											<ul >
+												<li>Servicial</li>
+												<li>Comprometida</li>
+												<li>Curiosa</li>
+												<li>Sentido de urgencia</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p> Me gusta investigar y saber cuales son las tendencias en
+											las áreas del diseño, considero que cada proyecto es un trabajo en equipo con el cliente para que este sea funcional y logre el impacto esperado. </p>
 											</div>
 											
 										</div>
 								</div>
+							</div>
+						</div>
+						<div class="integrantes4 " >
+							<div class="row people-row mx-auto ">
 								<div class="col-lg-4 col-12  list-people d-none d-sm-block ">
 									<img class="my-3" src="assets/img/integrantes/Jorge.jpg" style="width: 100%">
 									<p class="MemberName mx-3">Jorge Santana </p>
@@ -831,8 +833,9 @@
 												<li>Receptivo e intuitivo</li>
 												<li>Empatía tan grande como él</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p> <b>"Inserte frase motivacional aquí"</b>
+Diseñador instruccional apasionado del futbol,
+receptivo, resiliente y nivel 2832 en Candy Crush. </p>
 											</div>
 											
 										</div>
@@ -844,15 +847,14 @@
 										<div class="back m-3 p-4 ">
 											<p class="pl-3 pt-2 pt-lg-1 transformation " id="TeamName">Happy Team</p>
 											<div class="mt-lg-3 mt-5" id="MemberDesc">
-												<p><b>Experience Creator</b></p>
+												<p><b>EXPERIENCE CREATOR</b></p>
 											<ul >
 												<li>Asertiva</li>
 												<li>Persistente</li>
 												<li>Empática</li>
 												<li>Autoexigente</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p>Especialista en Diseño Instruccional, palabrarista y domadora de símbolos. Operaria experimental de la maquinaria de ideas y entusiasta creadora de historias. </p>
 											</div>
 											
 										</div>
@@ -871,17 +873,14 @@
 												<li>Músculo diplomático</li>
 												<li>Scrum master, socio y amigo</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p>Project manager en busca de la construcción grupal del conocimiento para la mejora de nuestros servicios al cliente</p>
 											</div>
 											
 										</div>
 								</div>
-								
-								
 							</div>
 						  </div>
-						   <div class="integrantes3 ">
+						   <div class="integrantes5 ">
 							<div class="row  people-row mx-auto">
 								<div class="col-lg-4 col-12  list-people d-none d-sm-block ">
 									<img class="my-3" src="assets/img/integrantes/Reyes.jpg" style="width: 100%">
@@ -897,8 +896,7 @@
 												<li>Amistoso</li>
 												<li>Analitico</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p> Ingeniero en TIC's, amante de la programación multiplataforma, UX y trabajo en equipos multidisciplinarios, siempre aprendiendo cosas nuevas e innovando. </p>
 											</div>
 											
 										</div>
@@ -922,8 +920,6 @@
 											
 										</div>
 								</div>
-								
-							
 								<div class="col-lg-4 col-12  list-people d-none d-sm-block ">
 									<img class="my-3" src="assets/img/integrantes/Sam.jpg" style="width: 100%">
 									<p class="MemberName mx-3">Samantha Aguilar </p>
@@ -931,18 +927,22 @@
 										<div class="back m-3 p-4 ">
 											<p class="pl-3 pt-2 pt-lg-1 MAZ " id="TeamName">MAZ Team</p>
 											<div class="mt-lg-3 mt-5" id="MemberDesc">
-											<ul style="list-style: none;">
-												<li>Info 0</li>
-												<li>Info 1</li>
-												<li>Info 2</li>
-												<li>Info 3</li>
+											<p><b>THE SHOOTING DESIGNER</b></p>
+											<ul >
+												<li>Rizos con alto volumen creativo</li>
+												<li>Con gran sentido de la estética</li>
+												<li>Responsable y servicial</li>
+												<li>Detallista/perfeccionista</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p> Diseñadora Gráfica por elección, fotógrafa en su tiempo libre, con gran sentido de la estética y atención al detalle, en pro del minimalismo y el diseño de buena calidad. </p>
 											</div>
 											
 										</div>
 								</div>
+							</div>
+						</div>
+						<div class="integrantes6 ">
+							<div class="row  people-row mx-auto">
 								<div class="col-lg-4 col-12  list-people d-none d-sm-block ">
 									<img class="my-3" src="assets/img/integrantes/Sandy.jpg" style="width: 100%">
 									<p class="MemberName mx-3">Sandra Flores </p>
@@ -957,12 +957,34 @@
 												<li>Habilidades de liderazgo</li>
 												<li>Metro y medio de puro talento</li>
 											</ul>
-											<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor </p>
+											<p>Ocurrente, soñadora y creativa miembro de Gryffindor. 
+											Me gusta hacer magia a través del diseño. </p>
 											</div>
 											
 										</div>
+
 								</div>
+								<div class="col-lg-4 col-12  list-people d-none d-sm-block ">
+									<img class="my-3" src="assets/img/integrantes/Xime.jpg" style="width: 100%">
+									<p class="MemberName mx-3">Ximena De La Torre </p>
+									<p class="MemberPos mx-3">DISEÑADORA</p>
+										<div class="back m-3 p-4 ">
+											<p class="pl-3 pt-2 pt-lg-1 Growth " id="TeamName">Growth Team</p>
+											<div class="mt-lg-3 mt-5" id="MemberDesc">
+											<p><b>IDEA SCULPTOR </b><p>
+											<ul>
+												<li>Adaptable.</li>
+												<li>Perseverante y comprometida</li>
+												<li>Una mente curiosa y critica</li>
+												<li>Contempla el mundo a su manera </li>
+											</ul>
+											<p>Diseñadora grafica con visión estratégica, fotógrafa y amante de los animales. Creo que la creatividad  y el trabajo en equipo pueden cambiar al mundo. </p>
+											</div>
+											
+										</div>
+										
+								</div>
+
 							</div>
 						   </div>
 						

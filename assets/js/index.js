@@ -86,13 +86,6 @@ function infografiaSlider(){
                 '</div>'+
                 '<!-- Fin primers tres Infografías -->'+
             '</div>'+
-            '<div>'+
-                '<a class="carousel-control-prev " href="#carousel-3" role="button" data-slide="prev">'+
-                    '<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">'+
-               '</a>'+
-               '<a class="carousel-control-next " href="#carousel-3" role="button" data-slide="next">'+
-                    '<img class="carousel-control-next-icon" src="assets/img/derecha.png">'+
-                '</a></div>'+
             '<ol class="carousel-indicators">'+
                 '<li data-target="#carousel-1" data-slide-to="0" class="active"></li>'+
                 '<li data-target="#carousel-1" data-slide-to="1"></li>'+
@@ -104,14 +97,14 @@ function infografiaSlider(){
 		$("#container-infografia").html('<div class="carousel slide" data-ride="carousel" id="carousel-3" style="text-align: -webkit-center">'+
             '<div class="carousel-inner" role="listbox">'+
                 '<div class="carousel-item active">'+ 
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39;{"caption" : "BOX and WHISKERS plot!"}&#39; href="assets/img/infografia/P1.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER1.png" alt="Slide Image"></a>'+
                             '</div>'+
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39;{"caption" : "Happy Team"}&#39; href="assets/img/infografia/P2.jpg">'+
                                     '<img class="card-img-top" src="assets/img/infografia/POSTER2.png" alt="Slide Image"></a>'+
@@ -119,7 +112,7 @@ function infografiaSlider(){
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39;{"caption" : "SCRUM POKER - Game Rules"}&#39; href="assets/img/infografia/P3.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER3.png" alt="Slide Image">'+
                                 '</a>'+
@@ -127,7 +120,7 @@ function infografiaSlider(){
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "COOLERS estrategias para su instalación"}&#39&#39; href="assets/img/infografia/P4.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER4.png" alt="Slide Image">'+
                                 '</a>'+
@@ -135,14 +128,14 @@ function infografiaSlider(){
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "Activaciones"}&#39&#39; href="assets/img/infografia/P5.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER5.png" alt="Slide Image"></a>'+
                             '</div>'+
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39&#39;{"caption" : "ONEWAY ANOVA"}&#39&#39; href="assets/img/infografia/P6.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER6.png" alt="Slide Image">'+
                                 '</a>'+
@@ -150,21 +143,21 @@ function infografiaSlider(){
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12 ">'+
+                        '<div class="col-12 ml-4 ">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<img class="card-img-top" src="assets/img/infografia/POSTER7.png" alt="Slide Image">'+
                             '</div>'+
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<img class="card-img-top" src="assets/img/infografia/POSTER8.png" alt="Slide Image">'+
                             '</div>'+
                         '</div>'+
                 '</div>'+
                 '<div class="carousel-item">'+
-                        '<div class="col-12">'+
+                        '<div class="col-12 ml-4">'+
                             '<div class="card cardInfo mb-2" style="border:none">'+
                                 '<a data-fancybox="images" data-options=&#39;{"caption" : "SCRUM Framework Rules"}&#39; href="assets/img/infografia/P9.jpg"><img class="card-img-top" src="assets/img/infografia/POSTER9.png" alt="Slide Image">'+
                                 '</a>'+
@@ -172,13 +165,6 @@ function infografiaSlider(){
                         '</div>'+
                 '</div>'+
             '</div>'+
-            '<div>'+
-                '<a class="carousel-control-prev " href="#carousel-3" role="button" data-slide="prev">'+
-                    '<img class="carousel-control-prev-icon" src="assets/img/izquierda.png">'+
-               '</a>'+
-               '<a class="carousel-control-next " href="#carousel-3" role="button" data-slide="next">'+
-                    '<img class="carousel-control-next-icon" src="assets/img/derecha.png">'+
-                '</a></div>'+
             '<ol class="carousel-indicators">'+
                 '<li data-target="#carousel-1" data-slide-to="0" class="active"></li>'+
                 '<li data-target="#carousel-1" data-slide-to="1"></li>'+
@@ -458,7 +444,7 @@ $('.btn-menu').click(function() {
 		$('#btn-menu').css("display","block");
 		$("#menu").css("display","block");
 		$(".scrollContent").css("overflowX","");
-		window.scrollTo(0,3500);
+		window.scrollTo(0,4500);
 		$("#bullets").show();
 
 
@@ -564,7 +550,7 @@ $('.btn-menu').click(function() {
 	})
 
 
-	function btnListPeople(listnum){
+	/*function btnListPeople(listnum){
 		switch (listnum)
 		{
 			case 1:
@@ -593,7 +579,7 @@ $('.btn-menu').click(function() {
 			break;
 		}
 	}
-
+*/
 
    
 	
@@ -637,9 +623,9 @@ $('.btn-menu').click(function() {
 								.fromTo(".navbar",{display:"blocks"},{display:"none",duration:3})
 							    .fromTo("#green-x",{top:"10vh"},{top:"80vh",duration:9})
 							    .fromTo("#blue-x",{bottom:"10vh"},{bottom:"87vh",duration:9},"-=9")
-								.fromTo("#MagicBoxBig",{top:"0%"},{top:"0%",duration:15},"-=9")
+								.fromTo("#MagicBoxBig",{top:"25%"},{top:"0%",duration:25,delay:10})
 								.fromTo("#grupoMas",{opacity:1},{opacity:0,duration:4},"-=7")
-								.fromTo("#MagicBoxText",{opacity:0},{opacity:1,duration:3,delay:2},"-=7")
+								.fromTo("#MagicBoxText",{opacity:0},{opacity:1,duration:3},"-=7")
 								.fromTo("#transparent-x",{top:"85%"},{left:"50%",opacity:0,duration:6},"-=7")
 								.fromTo("#screen2",{opacity:0},{opacity:1,duration:6},"-=7")
 								.fromTo("#green-x,#blue-x,#MagicBoxBig,#MagicBoxText,#transparent-x,#down,#logoMB",{},{y:"-900",duration:9})
@@ -659,7 +645,7 @@ $('.btn-menu').click(function() {
 								.fromTo("#carousel",40, {left:  "-4000px"}, {left: "20px", ease: Linear.easeNone},"-=30")
 								.fromTo(".how",1,{display:"none"},{display:"block"},"+=0")
 								
-								.fromTo("#carousel",16,{},{y:"-2000px"})
+								.fromTo("#carousel",16,{},{y:"-2000px",delay:"5"})
 								.fromTo(".how",6,{top:"100%"},{top:"0%"},"-=16")
 								.fromTo("#como-title",5,{x: "-100"},{x:"-500"},"-=16")
 								.fromTo("#carousel",1,{display:"blocks"},{display:"none"})
@@ -768,7 +754,7 @@ $('.btn-menu').click(function() {
 			 $("#section2").on("click",function(){
 			 	$("#bullets").show();
 			 	$(".btn-menu ").toggleClass('active');
-			 	window.scrollTo(0,3500);
+			 	window.scrollTo(0,4500);
 
 				$('#menu, nav').toggleClass('open');
 				$(".menu-list").toggleClass("show");
@@ -808,7 +794,7 @@ $('.btn-menu').click(function() {
 				
 			break;
 			case "bullet2":
-				window.scrollTo(0,3500);
+				window.scrollTo(0,4500);
 				
 			break;
 			case "bullet3":
@@ -834,29 +820,42 @@ $('.btn-menu').click(function() {
 
 
 	var numberPerson=0;
+	var ContSaltos;
 
 	$("#btn-izquierda").on("click",function(){
+		var width = screen.width;
+		if(width<600){
+			ContSaltos=1;
+		}else{
+			ContSaltos=3;
+		}
 		console.log("izquierda");
-			if(numberPerson==0)
+			if(numberPerson<=0)
 			{
 				numberPerson=TotalPerson;
 			}else{
-				numberPerson=numberPerson-1;
+				numberPerson=numberPerson-ContSaltos;
 			}
 			slidePeople();
 		});
 
 	$("#btn-derecha").on("click",function(){
+		var width = screen.width;
+		if(width<600){
+			ContSaltos=1;
+		}else{
+			ContSaltos=3;
+		}
 		console.log("derecha");
-		console.log(numberPerson);
 		console.log(TotalPerson);
-			if(numberPerson==TotalPerson)
+		numberPerson=numberPerson+ContSaltos;
+			if(numberPerson>TotalPerson)
 			{
 				numberPerson=0;
 			}else{
-				numberPerson=numberPerson+1;
 
 			}
+			console.log(numberPerson);
 			slidePeople();
 			
 		});
@@ -866,19 +865,48 @@ $('.btn-menu').click(function() {
 	var TotalPerson = 0;
 	function slidePeople(){
 		TotalPerson=0;
-		if(numberPerson<=5)
-		{
+		if(numberPerson<=2){
 			$(".integrantes1").css("display","block");
 			$(".integrantes2").css("display","none");
 			$(".integrantes3").css("display","none");
-		}else if(numberPerson<=11){
+			$(".integrantes4").css("display","none");
+			$(".integrantes5").css("display","none");
+			$(".integrantes6").css("display","none");
+		}else if(numberPerson<=5){
 			$(".integrantes1").css("display","none");
 			$(".integrantes2").css("display","block");
 			$(".integrantes3").css("display","none");
-		}else{
+			$(".integrantes4").css("display","none");
+			$(".integrantes5").css("display","none");
+			$(".integrantes6").css("display","none");
+		}else if(numberPerson<=8){
 			$(".integrantes1").css("display","none");
 			$(".integrantes2").css("display","none");
 			$(".integrantes3").css("display","block");
+			$(".integrantes4").css("display","none");
+			$(".integrantes5").css("display","none");
+			$(".integrantes6").css("display","none");
+		}else if(numberPerson<=11){
+			$(".integrantes1").css("display","none");
+			$(".integrantes2").css("display","none");
+			$(".integrantes3").css("display","none");
+			$(".integrantes4").css("display","block");
+			$(".integrantes5").css("display","none");
+			$(".integrantes6").css("display","none");
+		}else if(numberPerson<=14){
+			$(".integrantes1").css("display","none");
+			$(".integrantes2").css("display","none");
+			$(".integrantes3").css("display","none");
+			$(".integrantes4").css("display","none");
+			$(".integrantes5").css("display","block");
+			$(".integrantes6").css("display","none");
+		}else{
+			$(".integrantes1").css("display","none");
+			$(".integrantes2").css("display","none");
+			$(".integrantes3").css("display","none");
+			$(".integrantes4").css("display","none");
+			$(".integrantes5").css("display","none");
+			$(".integrantes6").css("display","block");
 		}
 		console.log(numberPerson);
 			$(".list-people").each(function(index,element)
